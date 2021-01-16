@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@Scripts.Render("~/Scripts/tic-tac-toe.js")
+
+<div class="score">
+    <p>Score</p>
+    <li class="inline"><a class="player1"></a><a class="playerscore"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+    <li class="inline"><a class="player2"></a><a class="aiscore"></a></li>
+</div>
+
+<table>
+    <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+    </tr>
+    <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+    </tr>
+    <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+    </tr>
+</table>
+
+<div id="buttons">
+       
+        <button class="replay" onClick="startGame()">Replay</button>
+
+        <button class="MultiPlayer" onClick="startMultiplayer()">Multi Player</button>
+
+        <button class="SinglePlayer" onClick="startSinglePlayer()">Single Player</button>
+
+</div>
+
+<div class="endgame">
+    <div class="text"></div>
+</div>

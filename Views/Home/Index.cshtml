@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Conectat = User.Identity.IsAuthenticated;
+}
+
+<div class="jumbotron">
+    <h1>Unbeatable Tic-Tac-Toe</h1>
+    <p class="lead">Proiect Dezvoltarea Aplicatiilor Web</p>
+    @if (ViewBag.Conectat)
+    {
+        <p><a href="/TicTacToe" class="btn btn-primary btn-lg">Joaca &raquo;</a></p>
+
+    }
+    else
+    {
+        <p><a href="/Account/Login" class="btn btn-primary btn-lg">Login &raquo;</a></p>
+    }
+
+</div>
